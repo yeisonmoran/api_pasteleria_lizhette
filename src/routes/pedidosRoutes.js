@@ -3,6 +3,7 @@
 const express    = require('express');
 const router     = express.Router();
 const controller = require('../controllers/pedidosController');
+const { proteger } = require('../middleWares/authMiddleware');
 
 // GET    /pedidos         → Ver todos los pedidos
 // GET    /pedidos/:id     → Ver un pedido específico
